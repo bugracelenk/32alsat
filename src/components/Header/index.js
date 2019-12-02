@@ -83,6 +83,24 @@ class Header extends Component {
         >
           Kayıt Ol
         </Link>
+        <Link
+          onlyActiveOnIndex={true}
+          key={8}
+          activeClassName="activeNavLink"
+          className="navLink"
+          to="/admin"
+        >
+          Admin
+        </Link>
+        <Link
+          onlyActiveOnIndex={true}
+          key={8}
+          activeClassName="activeNavLink"
+          className="navLink"
+          to="/user/123"
+        >
+          Profil
+        </Link>
       </div>
     );
   }
