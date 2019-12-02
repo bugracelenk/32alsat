@@ -85,7 +85,7 @@ class Header extends Component {
         </Link>
         <Link
           onlyActiveOnIndex={true}
-          key={8}
+          key={9}
           activeClassName="activeNavLink"
           className="navLink"
           to="/admin"
@@ -94,7 +94,7 @@ class Header extends Component {
         </Link>
         <Link
           onlyActiveOnIndex={true}
-          key={8}
+          key={10}
           activeClassName="activeNavLink"
           className="navLink"
           to="/user/123"
