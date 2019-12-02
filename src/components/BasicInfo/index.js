@@ -6,7 +6,7 @@ class BasicInfo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "Arshad Khan",
+      name: "Isparta 32 Al Sat",
       imgSrc: ""
     };
   }

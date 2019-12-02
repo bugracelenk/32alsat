@@ -1,19 +1,20 @@
-import React, { Component } from "react";
-import "./styles.sass";
-import Item from "../Item/index";
+import React, { Component } from 'react';
+import { PropTypes } from 'prop-types';
+import './styles.sass';
+import Category from '../Category/index';
 
-class Homepage extends Component {
+class SpeCategory extends Component {
   componentDidMount() {
     document.body.scrollTop = 0;
-    document.querySelector(".menu").classList.remove("open");
+    document.querySelector('.menu').classList.remove('open');
   }
+  
   render() {
     return (
       <div>
         <main className="main">
-          {"1234567890".split("").map((e, i) => (
-            <Item key={i} />
-          ))}
+        <Category title={this.props.params.category.toUpperCase()}/>
+        {"12345678901".split("").map((e, i) => <Category key={i} />)}
         </main>
         <div className="pagination-wrapper">
           <div className="pagination">
@@ -36,4 +37,8 @@ class Homepage extends Component {
   }
 }
 
-export default Homepage;
+SpeCategory.propTypes = {
+  params: PropTypes.object,
+};
+
+export default SpeCategory;

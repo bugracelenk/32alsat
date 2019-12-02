@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import { PropTypes } from 'prop-types';
 
 import './styles.sass';
 
@@ -26,41 +27,37 @@ class AddItemPage extends Component {
         <div className="hider" />
         <div className="modal">
           <div className="heading">
-            <h3>Add Item</h3>
+            <h3>Ürün Ekle</h3>
           </div>
           <div className="itemWrapper">
             <div className="itemPicWrapper">
               <div className="img" />
-              <p className="imgText frm">Upload Item Picture</p>
+              <p className="imgText frm">Ürün Fotoğrafı Yükle</p>
             </div>
             <div className="itemInfoWrapper">
               <div className="inputWrapper">
-                <label htmlFor="itemName">Name:</label>
-                <input id="itemName" name="itemName" type="text" className="itemName" placeholder="Enter Name" required />
+                <label htmlFor="itemName">Adı:</label>
+                <input id="itemName" name="itemName" type="text" className="itemName" placeholder="Ürünün Adını Giriniz" required />
               </div>
               <div className="priceWrapper">
                 <div className="inputWrapper">
-                  <label htmlFor="itemPrice">Price:</label>
-                  <input min="0" id="itemPrice" name="itemPrice" type="number" className="itemPrice" placeholder="Enter Price" required />
-                </div>
-                <div className="inputWrapper">
-                  <label htmlFor="itemCurrency">Currency:</label>
-                  <input id="itemCurrency" name="itemCurrency" type="text" className="itemCurrency" placeholder="Enter Currency" />
+                  <label htmlFor="itemPrice">Fiyatı:</label>
+                  <input min="0" id="itemPrice" name="itemPrice" type="number" className="itemPrice" placeholder="Fiyatı Giriniz" required />
                 </div>
               </div>
               <div className="inputWrapper">
-                <label htmlFor="itemDescription">Description:</label>
-                <textarea name="itemDescription" id="itemDescription" className="itemDescription" placeholder="Enter Item Description" />
+                <label htmlFor="itemDescription">Açıklama:</label>
+                <textarea name="itemDescription" id="itemDescription" className="itemDescription" placeholder="Ürün Açıklamasını Giriniz" />
               </div>
               <div className="inputWrapper">
-                <label htmlFor="itemTags">Tags(Comma Separated):</label>
-                <textarea name="itemTags" id="itemTags" className="itemTags" placeholder="Enter Tags" />
+                <label htmlFor="itemTags">Etiketler(Virgül ile ayırın):</label>
+                <textarea name="itemTags" id="itemTags" className="itemTags" placeholder="Etiketleri Giriniz" />
               </div>
             </div>
           </div>
           <div className="buttonWrapper">
-            <button className="saveItemBtn" onClick={this.close.bind(this)}>Save</button>
-            <button className="cancelItemBtn" onClick={this.close.bind(this)}>Cancel</button>
+            <button className="saveItemBtn" onClick={this.close.bind(this)}>Kaydet</button>
+            <button className="cancelItemBtn" onClick={this.close.bind(this)}>Vazgeç</button>
           </div>
         </div>
       </div>

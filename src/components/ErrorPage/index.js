@@ -8,7 +8,7 @@ class ErrorPage extends Component {
   }
   render() {
     return (
-      <h3 className="error text-center">404(Page Not Found)</h3>
+      <h3 className="error text-center">404(Aradığınız sayfa bulunamadı)</h3>
     );
   }
 }

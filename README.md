@@ -1,6 +1,6 @@
-## react-redux-template-for-ecommerce-site
+## 32alsat.com
 
-A beautiful e-commerce template with flat design.
+32alsat.com react frontend projesi.
 
 ## Installation
 
@@ -10,4 +10,3 @@ A beautiful e-commerce template with flat design.
 
 Open `localhost:8080` to open the app!
 
-Demo - https://react-template-arshad.now.sh/

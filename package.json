@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-template-for-ecommerce-site",
+  "name": "32alsatcom",
   "version": "0.1.0",
-  "description": "A beautiful e-commerce template with a flat design.",
+  "description": "32 al sat react frontend projesi",
   "engines": {
     "npm": ">=3"
   },
@@ -19,34 +19,40 @@
     "remove-dist": "rimraf ./dist",
     "prebuild": "npm run clean-dist && npm run lint && npm run test",
     "build": "babel-node tools/build.js && npm run open:dist",
-    "test": "node --harmony_proxies node_modules/jest/bin/jest",
     "test:cover": "npm run test -- --coverage ",
     "test:cover:travis": "npm run test:cover && cat ./coverage/lcov.info | node_modules/coveralls/bin/coveralls.js",
     "test:watch": "npm run test -- --watch",
     "open:cover": "npm run test:cover && open coverage/lcov-report/index.html",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js"
   },
-  "author": "Arshad Khan <arshdkhn1@gmail.com>",
+  "author": "Altuğ Buğra Çelenk <bugracelenk01@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.16.1",
+    "body-parser": "1.19.0",
     "dotenv": "^4.0.0",
-    "express-session": "^1.15.1",
-    "mongoose": "^4.8.2",
+    "express-session": "1.17.0",
+    "jquery": "3.4.1",
+    "mongoose": "4.13.19",
     "object-assign": "4.1.0",
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.1",
     "passport-google-oauth": "^1.0.0",
     "passport-twitter": "^1.0.4",
+    "prop-types": "15.7.2",
     "react": "15.4.1",
-    "react-addons-css-transition-group": "^15.4.2",
+    "react-addons-css-transition-group": "15.6.2",
     "react-dom": "15.4.1",
+    "react-dropdown": "1.6.4",
+    "react-icons": "3.8.0",
     "react-redux": "5.0.1",
     "react-router": "3.0.0",
+    "react-router-dom": "5.1.2",
     "react-router-redux": "4.0.7",
     "react-tap-event-plugin": "^2.0.1",
     "redux": "3.6.0",
-    "redux-thunk": "2.1.0"
+    "redux-thunk": "2.1.0",
+    "semantic-ui-css": "2.4.1",
+    "semantic-ui-react": "0.88.1"
   },
   "devDependencies": {
     "autoprefixer": "6.5.4",
@@ -79,7 +85,7 @@
     "jest": "18.1.0",
     "json-loader": "0.5.4",
     "mockdate": "2.0.1",
-    "node-sass": "4.0.0",
+    "node-sass": "4.13.0",
     "npm-run-all": "3.1.2",
     "open": "0.0.5",
     "postcss-loader": "1.2.1",
@@ -97,15 +103,12 @@
     "webpack-hot-middleware": "2.13.2",
     "webpack-md5-hash": "0.0.5"
   },
-  "keywords": ["react", "redux", "ecommerce", "Arshad Khan", "react-slingshot", "express", "node"],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/arshdkhn1/react-redux-template-for-ecommerce-site.git"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(css|scss)$": "identity-obj-proxy",
-      "^.+\\.(gif|ttf|eot|svg|woff|woff2|ico)$": "<rootDir>/tools/fileMock.js"
-    }
-  }
+  "keywords": [
+    "react",
+    "redux",
+    "ecommerce",
+    "react-slingshot",
+    "express",
+    "node"
+  ]
 }

@@ -4,7 +4,7 @@ import BasicInfo from '../BasicInfo/index';
 import OtherInfo from '../OtherInfo/index';
 import './styles.sass';
 
-class Profile extends Component {
+class UserProfile extends Component {
   componentDidMount() {
     document.body.scrollTop = 0;
     document.querySelector('.menu').classList.remove('open');
@@ -12,11 +12,11 @@ class Profile extends Component {
   render() {
     return (
       <div className="infoWrapper">
-        <BasicInfo editable={true}/>
-        <OtherInfo editable={true}/>
+        <BasicInfo editable={false}/>
+        <OtherInfo editable={false}/>
       </div>
     );
   }
 }
 
-export default Profile;
+export default UserProfile;

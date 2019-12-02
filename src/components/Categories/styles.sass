@@ -1,0 +1,49 @@
+@import url('https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css')
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap')
+@import '../../styles/variables';
+.main
+  padding: 1rem 0
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  min-height: 60vh
+
+.tag-wrapper
+  padding: 1rem
+  background-color: #c9c9c9
+  margin-bottom: 20px
+  margin-top: 20px
+  font-family: "Roboto", helvetica, sans-serif
+  border-radius: 10px
+
+.strongText
+  font-size: 1.8rem
+
+.heading
+  display: flex
+  h3
+    flex: 1
+  .btnListele
+    padding: 0 !important
+    background: transparent
+    color: $fbColor
+    border: 1px solid $fbColor
+    padding: 10px 10px
+    width: 200px;
+    height: 50px;
+    max-width: 200px
+    max-height: 50px
+    display: block
+    line-height: 1
+    font-weight: 500
+    font-size: .9rem
+    text-transform: uppercase
+    transition: color .3s
+    cursor: pointer
+    @media screen and ( max-width: 739px )
+      width: 100px;
+    &:hover
+      color: $twitterColor
+      border: 1px solid $twitterColor
+  .inputWrapper 
+    flex: 1
